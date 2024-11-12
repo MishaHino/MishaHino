@@ -1,0 +1,35 @@
+graph TD
+    A[Recepción de Materias Primas] --> B[Control de Calidad]
+    B --> C[Preparación de Ingredientes]
+    
+    subgraph Preparación de Harina de Cáscara de Cacao
+    D[Limpieza Cáscara de Cacao] --> E[Secado 60°C/6h]
+    E --> F[Molienda]
+    F --> G[Tamizado <150μm]
+    end
+    
+    subgraph Preparación de Mermelada
+    H[Limpieza Naranjas] --> I[Separación Cáscara]
+    I --> J[Corte en Tiras]
+    J --> K[Cocción con Azúcar]
+    K --> L[Control °Brix]
+    end
+    
+    subgraph Elaboración de Cupcakes
+    M[Cremado Mantequilla/Azúcar] --> N[Incorporación Huevos]
+    N --> O[Mezcla Harinas]
+    O --> P[Incorporación Líquidos]
+    P --> Q[Dosificación]
+    Q --> R[Horneado 180°C/20min]
+    end
+    
+    subgraph Papel de Arroz
+    S[Preparación Masa] --> T[Laminado]
+    T --> U[Secado]
+    end
+    
+    R --> V[Enfriamiento]
+    V --> W[Relleno con Mermelada]
+    W --> X[Envoltura con Papel de Arroz]
+    X --> Y[Empaque]
+    
